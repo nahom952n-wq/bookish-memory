@@ -28,7 +28,7 @@ export interface BillReminder {
 }
 
 // Calculate next occurrence date based on frequency
-export function calculateNextOccurrence(currentDate: Date, frequency: Frequency): Date {
+function calculateNextOccurrence(currentDate: Date, frequency: Frequency): Date {
   const date = new Date(currentDate);
 
   switch (frequency) {
